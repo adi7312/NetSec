@@ -1,8 +1,5 @@
 # **WCYB - Projekt nr 2 - Konfiguracja usługi VPN**
 
-**Autorzy**: Adrian Zalewski [gr.104], Wiktor Zawadzki [gr.104]
-
-
 **Cel**: Skonfigurować rozwiązanie VPN, w którym  serwer VPN pełni rolę bramy do sieci Internet.
 
 
