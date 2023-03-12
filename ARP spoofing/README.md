@@ -29,10 +29,10 @@ After we set up enivornment, we can start doing arp spoofing. Our aim is to forg
 
 Notice that if we download .html file from server (172.35.0.3) as a user (172.25.0.2), we will not see any traffic, it's obvious because the traffic is only between that two entities, we haven't made arp spoof yet (you can see visualisation of that siutation below).
 
-![](p/1.png)
+![](P/1.png)
 
 
-![](p/2.png)
+![](P/2.png)
 
 
 Everyone waited for that moment, now we will conduct arp spoofing. On attacker terminal we use `arpspoof` utility:
@@ -47,15 +47,18 @@ On second attacker terminal we use:
 Now we can see in Wireshark that some network traffic appeared, moslty we can see some ARP requests and responses.
 
 
+![](P/3.png)
+
+
 Now on user's terminal we will write: `wget 172.35.0.3` to download .html file of that page. What's interesting in Wireshark now we can see TCP and HTTP protocols related to activity that user conducted. So we can state that arp spoofing allowed us to conduct successful Man-in-the-Middle attack (MITM attack) - we can eavesdrop the network traffic between the user and gateway!
 
 
-![](p/4.png)
+![](P/4.png)
 
 
 Below you can see visualisation of our MITM attack:
 
-![](p/5.png)
+![](P/5.png)
 
 
 
